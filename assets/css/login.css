@@ -1,0 +1,62 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /* 背景图片居中且不平铺 */
+    background:url('../images/login_bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.layui-main{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.infoBox{
+    position: absolute;
+    width: 400px;
+    height: 310px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    /* 移动盒子宽高值的一半 */
+    transform: translate(-50%,-50%);
+}
+
+.info-Title{
+    height: 60px;
+    background: url('../images/login_title.png') no-repeat center;
+}
+
+/* 登录详情页 */
+.bottomBox{
+    padding: 0 30px;
+}
+
+.registBox{
+    display: none;
+}
+
+/* 链接靠右显示 */
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.layui-form-item{
+    position: relative;
+}
+
+.layui-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.layui-input{
+    padding-left: 30px;
+    font-size: 13px;
+}
