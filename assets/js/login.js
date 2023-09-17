@@ -52,7 +52,6 @@ $(function(){
         $('.link_login').click()
 
         // 5.监听表单登录事件
-        var formOne
         $('#logReady').submit(function(e){
           e.preventDefault()
           // 5.2.发起ajax请求
@@ -63,7 +62,7 @@ $(function(){
             data:$(this).serialize(),
             success:function (res) {
               if(res.status!==1){
-                layer.msg('登录失败！')
+                return layer.msg('登录失败！')
               }
               layer.msg('登录成功！')
               // 5.4.登陆成功后，将token存储在本地
