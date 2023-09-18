@@ -1,0 +1,16 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+/* 背景样式 */
+body{
+    padding: 15px;
+    background:#eeeded;
+}
+
+/* 表单样式 */
+.layui-form-item{
+    width: 500px;
+}

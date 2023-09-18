@@ -20,7 +20,7 @@ $.ajaxPrefilter(function(options){
         options.complete=function (res){
             // 4.1.判断请求是否成功
             // 在res.responseJSON属性中包含相应回来的数据对象
-            if(res.responseJSON.status===1 && res.responseJSON.message==='身份认证失败'){
+            if(res.responseJSON.status === 1 && res.responseJSON.message==='身份认证失败'){
                 // 4.2.强制清空token（伪造token）
                 localStorage.removeItem('token')
                 // 4.3.强制切回登录压面
