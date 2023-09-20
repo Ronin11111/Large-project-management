@@ -1,0 +1,27 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 15px;
+    background-color: #eeeded;
+}
+
+/* 头部区域，设为弹性布局 */
+.layui-card-header{
+    display: flex;
+    justify-content: space-between; /*调节在主轴的对齐方式 */
+    align-items:center ; /*调节在侧轴的对齐方式*/
+}
+
+/* 弹出层表单样式 */
+#form-add,
+#form-edit{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 15px;
+}
+
